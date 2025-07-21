@@ -149,7 +149,7 @@ VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 # TWRP Configuration
 TW_FRAMERATE := 60
 TW_THEME := portrait_hdpi
-TW_EXTRA_LANGUAGES := true
+TW_EXTRA_LANGUAGES := false
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_TOOLBOX := true
 TARGET_USES_MKE2FS := true
@@ -157,7 +157,7 @@ TW_EXCLUDE_DEFAULT_USB_INIT := true
 
 # Include some binaries
 TW_INCLUDE_LIBRESETPROP := true
-TW_INCLUDE_REPACKTOOLS := true
+TW_INCLUDE_REPACKTOOLS := false
 TW_INCLUDE_RESETPROP := true
 
 # Set brightness path and level
@@ -168,7 +168,7 @@ TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 # Excludes
 TW_EXCLUDE_APEX := true
 TW_EXCLUDE_PYTHON := true
-TW_EXCLUDE_NANO := true
+TW_EXCLUDE_NANO := false
 TW_EXCLUDE_TWRPAPP := true
 TW_EXCLUDE_TZDATA := true
 TW_EXCLUDE_BASH := true
@@ -176,7 +176,7 @@ TW_EXCLUDE_LPTOOLS := true
 TW_EXCLUDE_LPDUMP := true
 
 # Debug-tools
-TWRP_INCLUDE_LOGCAT := true
+#TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
 
 # Crypto
